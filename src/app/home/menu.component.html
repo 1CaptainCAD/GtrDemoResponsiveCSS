@@ -1,0 +1,20 @@
+<header>
+  <h1>{{menuTitle}}</h1>
+  <h2>{{menuSubTitle}}</h2>
+</header>
+
+<nav class="clearfix">
+  <div>
+    <ul>
+      <li routerLinkActive="active" class="active">
+        <a routerLink='/welcome'>Home</a>
+      </li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a routerLink='/guitars'>Guitar Brands</a>
+      </li>
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a routerLink="['/guitars', 'add']">Add Guitar</a>
+      </li>
+    </ul>
+  </div>
+</nav>
