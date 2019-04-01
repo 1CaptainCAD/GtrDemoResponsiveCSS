@@ -33,6 +33,15 @@ nav {
   background-color: $secondaryColor;
   border-bottom: 1px solid rgba(0,0,0,0.3);
 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $secondaryColor;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
   ul li {
     float: left;
     width: 25%;
@@ -59,6 +68,18 @@ nav {
     color: $secondaryColor;
     background-color: $primaryColor;
   } // end hover
+
+  li.dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content a {
+    display:block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
 } // end nav
 

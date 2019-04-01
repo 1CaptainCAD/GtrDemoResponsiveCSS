@@ -9,8 +9,18 @@
       <li routerLinkActive="active" class="active">
         <a routerLink='/welcome'>Home</a>
       </li>
-      <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-        <a routerLink='/guitars'>Guitar Brands</a>
+      <li routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}"
+          class="dropdown"
+      >
+        <a routerLink='/guitars'>Brands</a>
+        <div class="dropdown-content">
+          <a href="#">Martin</a>
+          <a href="#">Taylor</a>
+          <a href="#">Fender</a>
+          <a href="#">Gibson</a>
+          <a href="#">Yamaha</a>
+        </div>
       </li>
       <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <a routerLink="['/guitars', 'add']">Add Guitar</a>
