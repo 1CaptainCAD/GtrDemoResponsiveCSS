@@ -8,8 +8,12 @@ const routes: Routes = [
       path: '', component: ShellComponent,
       children: [
         {path: 'welcome', component: WelcomeComponent},
+        {path: 'guitars', loadChildren: './guitars/guitar.module#GuitarModule'},
         {path: '', redirectTo: 'welcome', pathMatch: 'full'}
       ]
+    },
+    {
+      path: '**', component: ShellComponent
     }
   ];
 

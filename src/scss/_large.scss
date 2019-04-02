@@ -7,3 +7,48 @@ div#wrapper {
   box-shadow: 0 0 1px #000000;
   padding-bottom: 1rem;
 }
+
+/*  ----------------------- NAVIGATION --------------------------- */
+nav {
+  ul {
+    margin-left: $gutter;
+    border-left: 1px solid rgba(0,0,0,0.3);
+  }
+  ul li {width: auto;}
+  ul li:last-child{border-right: 1px solid rgba(0,0,0,0.3);}
+  ul li a {
+    padding: .5rem 1rem;
+  }
+} // end nav
+
+
+/*  ----------------------- MAIN --------------------------- */
+main {
+  div.guitaradd {
+    display: table;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: $boldWeight;
+    color: red;
+  }
+  span.guitaradd {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  div.guitaredit {
+    display: table;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: $boldWeight;
+    color: red;
+  }
+  span.guitaredit {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

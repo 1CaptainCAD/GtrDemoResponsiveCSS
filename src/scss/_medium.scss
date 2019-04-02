@@ -1,0 +1,30 @@
+/*  ----------------------- MAIN --------------------------- */
+main {
+  div.guitaradd {
+    display: table;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: $boldWeight;
+    color: darkorange;
+  }
+  span.guitaradd {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  div.guitaredit {
+    display: table;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: $boldWeight;
+    color: darkorange;
+  }
+  span.guitaredit {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

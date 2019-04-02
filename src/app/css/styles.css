@@ -167,6 +167,28 @@ main figure.welcome img {
   margin-right: auto;
   max-height: 428px;
   max-width: 188px; }
+main div.guitaradd {
+  display: table;
+  text-align: center;
+  height: 250px;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #424e64; }
+main span.guitaradd {
+  display: table-cell;
+  vertical-align: middle; }
+main div.guitaredit {
+  display: table;
+  text-align: center;
+  height: 250px;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #424e64; }
+main span.guitaredit {
+  display: table-cell;
+  vertical-align: middle; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -174,6 +196,30 @@ main figure.welcome img {
   display: table;
   clear: both; }
 
+@media only screen and (min-width: 35rem) {
+  /*  ----------------------- MAIN --------------------------- */
+  main div.guitaradd {
+    display: table;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: darkorange; }
+  main span.guitaradd {
+    display: table-cell;
+    vertical-align: middle; }
+  main div.guitaredit {
+    display: table;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: darkorange; }
+  main span.guitaredit {
+    display: table-cell;
+    vertical-align: middle; } }
 @media only screen and (min-width: 60rem) {
   /*  ----------------------- BODY --------------------------- */
   header, nav, main, footer {
@@ -184,4 +230,39 @@ main figure.welcome img {
     max-width: 80rem;
     margin: 0rem auto;
     box-shadow: 0 0 1px #000000;
-    padding-bottom: 1rem; } }
+    padding-bottom: 1rem; }
+
+  /*  ----------------------- NAVIGATION --------------------------- */
+  nav ul {
+    margin-left: 2%;
+    border-left: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li {
+    width: auto; }
+  nav ul li:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.3); }
+  nav ul li a {
+    padding: .5rem 1rem; }
+
+  /*  ----------------------- MAIN --------------------------- */
+  main div.guitaradd {
+    display: table;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: red; }
+  main span.guitaradd {
+    display: table-cell;
+    vertical-align: middle; }
+  main div.guitaredit {
+    display: table;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: red; }
+  main span.guitaredit {
+    display: table-cell;
+    vertical-align: middle; } }

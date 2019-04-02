@@ -103,6 +103,34 @@ main {
     max-height: 428px;
     max-width: 188px;}
 
+  div.guitaradd {
+    display: table;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: $boldWeight;
+    color: $primaryColor;
+  }
+  span.guitaradd {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  div.guitaredit {
+    display: table;
+    text-align: center;
+    height: 250px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: $boldWeight;
+    color: $primaryColor;
+  }
+  span.guitaredit {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
 } // end main
 
 /*----- Clearfix: Force an Element not to collapse -----*/

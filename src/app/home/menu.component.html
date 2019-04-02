@@ -15,15 +15,15 @@
       >
         <a routerLink='/guitars'>Brands</a>
         <div class="dropdown-content">
-          <a href="#">Martin</a>
-          <a href="#">Taylor</a>
-          <a href="#">Fender</a>
-          <a href="#">Gibson</a>
-          <a href="#">Yamaha</a>
+          <a routerLink="/guitars/1">Martin</a>
+          <a routerLink="/guitars/2">Taylor</a>
+          <a routerLink="/guitars/3">Fender</a>
+          <a routerLink="/guitars/4">Gibson</a>
+          <a routerLink="/guitars/5">Yamaha</a>
         </div>
       </li>
       <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-        <a routerLink="['/guitars', 'add']">Add Guitar</a>
+        <a [routerLink]="['/guitars', 'add']">Add Guitar</a>
       </li>
     </ul>
   </div>
