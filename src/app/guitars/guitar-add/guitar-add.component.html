@@ -1,6 +1,50 @@
-<main>
-  <div class="guitaradd">
-    <span class="guitaradd">Add a new Guitar page to go here!</span>
-  </div>
+<main class="guitarAdd">
+  <form method="get">
+
+    <fieldset>
+      <legend>Guitar Information</legend>
+      <label class="top">Brand
+        <select>
+          <option value="">Please Select</option>
+          <option value="martin" selected>Martin</option>
+          <option value="taylor">Taylor</option>
+          <option value="fender">Fender</option>
+          <option value="gibson">Gibson</option>
+          <option value="yamaha">Yamaha</option>
+        </select>
+      </label>
+      <label class="top"> Model <span>(required)</span>
+        <input type="text" required>
+      </label>
+      <label class="top"> Price <span>(required)</span>
+        <input type="number" required>
+      </label>
+      <label class="top"> Rating <span>(required)</span>
+        <input type="number" required>
+      </label>
+      <label class="top">Description<textarea></textarea></label>
+    </fieldset>
+    <fieldset>
+      <legend>Guitar Technical Details</legend>
+      <h2>Guitar Type</h2>
+      <label class="sbs"><input type="radio" name="guitarType" value="acoustic" checked>Acoustic</label>
+      <label class="sbs"><input type="radio" name="guitarType" value="electric">Electric</label>
+      <h2>String Type</h2>
+      <label class="sbs"><input type="radio" name="stringType" value="steel" checked>Steel</label>
+      <label class="sbs"><input type="radio" name="stringType" value="nylon">Nylon</label>
+      <label class="top">Strings
+        <input type="number" value="6">
+      </label>
+      <label class="top">Frets
+        <input type="number" value="20">
+      </label>
+      <label class="top">Scale Length
+        <input type="number" value="25.4">
+      </label>
+    </fieldset>
+
+
+    <input class="submitBtn" type="submit" value="Add New Guitar Model">
+  </form>
 </main>
 

@@ -153,42 +153,88 @@ nav {
     display: block; }
 
 /*  ----------------------- MAIN --------------------------- */
-main h3.author {
+main {
+  min-width: 26rem; }
+
+main.home h3.author {
   display: inline; }
-main div.author {
+main.home div.author {
   text-align: center;
   font-size: 1.2rem;
   color: #424e64; }
-main figure.welcome {
+main.home figure.welcome {
   width: 100%; }
-main figure.welcome img {
+main.home figure.welcome img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-height: 428px;
   max-width: 188px; }
-main div.guitaradd {
-  display: table;
-  text-align: center;
+
+main.brands div.guitarDetails {
+  display: flex;
   height: 250px;
   width: 100%;
   font-size: 1.5rem;
   font-weight: 700;
   color: #424e64; }
-main span.guitaradd {
-  display: table-cell;
-  vertical-align: middle; }
-main div.guitaredit {
-  display: table;
-  text-align: center;
-  height: 250px;
-  width: 100%;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #424e64; }
-main span.guitaredit {
-  display: table-cell;
-  vertical-align: middle; }
+  main.brands div.guitarDetails span {
+    margin: auto; }
+
+main.guitarAdd form {
+  margin: 1rem 2%;
+  max-width: 25rem; }
+  main.guitarAdd form fieldset {
+    border: 1px solid #EAEAEA;
+    border-radius: .4rem;
+    padding: 0 2%;
+    margin: 2rem 0; }
+    main.guitarAdd form fieldset legend {
+      text-align: center;
+      color: #ce3a67;
+      padding: 0 .4rem; }
+  main.guitarAdd form label.top {
+    display: block;
+    padding: .75rem 0; }
+    main.guitarAdd form label.top span {
+      font-size: .75rem;
+      color: #ce3a67; }
+    main.guitarAdd form label.top input, main.guitarAdd form label.top textarea, main.guitarAdd form label.top select {
+      display: block;
+      font-size: 1.25rem;
+      padding: .75rem 1rem;
+      background-color: #F6F6F6;
+      border: none;
+      border-radius: 5px;
+      color: #424e64;
+      margin-top: .2rem;
+      width: 100%; }
+    main.guitarAdd form label.top textarea {
+      min-height: 8rem; }
+    main.guitarAdd form label.top input:required {
+      border: 2px solid #ce3a67; }
+    main.guitarAdd form label.top input:required:valid {
+      border-color: #424e64; }
+    main.guitarAdd form label.top input:focus, main.guitarAdd form label.top textarea:focus {
+      background-color: #ddd; }
+  main.guitarAdd form label.sbs {
+    display: block;
+    padding: .75rem 0; }
+  main.guitarAdd form h2 {
+    font-weight: 300;
+    font-size: .75rem;
+    padding: 1.5rem 0 0 0; }
+  main.guitarAdd form input.submitBtn {
+    border: none;
+    background-color: #ce3a67;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: .4rem 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -198,28 +244,8 @@ main span.guitaredit {
 
 @media only screen and (min-width: 35rem) {
   /*  ----------------------- MAIN --------------------------- */
-  main div.guitaradd {
-    display: table;
-    text-align: center;
-    height: 250px;
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: darkorange; }
-  main span.guitaradd {
-    display: table-cell;
-    vertical-align: middle; }
-  main div.guitaredit {
-    display: table;
-    text-align: center;
-    height: 250px;
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: darkorange; }
-  main span.guitaredit {
-    display: table-cell;
-    vertical-align: middle; } }
+  main.brands div.guitarDetails {
+    color: darkorange; } }
 @media only screen and (min-width: 60rem) {
   /*  ----------------------- BODY --------------------------- */
   header, nav, main, footer {
@@ -244,25 +270,5 @@ main span.guitaredit {
     padding: .5rem 1rem; }
 
   /*  ----------------------- MAIN --------------------------- */
-  main div.guitaradd {
-    display: table;
-    text-align: center;
-    height: 250px;
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: red; }
-  main span.guitaradd {
-    display: table-cell;
-    vertical-align: middle; }
-  main div.guitaredit {
-    display: table;
-    text-align: center;
-    height: 250px;
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: red; }
-  main span.guitaredit {
-    display: table-cell;
-    vertical-align: middle; } }
+  main.brands div.guitarDetails {
+    color: red; } }

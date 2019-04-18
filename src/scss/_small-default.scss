@@ -85,6 +85,11 @@ nav {
 
 /*  ----------------------- MAIN --------------------------- */
 main {
+  min-width: 26rem;
+}
+
+main.home {
+
   h3.author {
     display: inline;
   }
@@ -101,37 +106,92 @@ main {
     margin-left: auto;
     margin-right: auto;
     max-height: 428px;
-    max-width: 188px;}
+    max-width: 188px;
+  }
 
-  div.guitaradd {
-    display: table;
-    text-align: center;
+} // end main home
+
+main.brands {
+  div.guitarDetails {
+    display: flex;
     height: 250px;
     width: 100%;
     font-size: 1.5rem;
     font-weight: $boldWeight;
     color: $primaryColor;
-  }
-  span.guitaradd {
-    display: table-cell;
-    vertical-align: middle;
-  }
 
-  div.guitaredit {
-    display: table;
-    text-align: center;
-    height: 250px;
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: $boldWeight;
-    color: $primaryColor;
+    span {
+      margin: auto;
+    }
   }
-  span.guitaredit {
-    display: table-cell;
-    vertical-align: middle;
-  }
+}
 
-} // end main
+main.guitarAdd {
+  form {
+    margin: 1rem $gutter;
+    max-width: 25rem;
+    fieldset {
+      border: 1px solid $lightGrey;
+      border-radius: .4rem;
+      padding: 0 $gutter;
+      margin: 2rem 0;
+
+      legend {
+        text-align: center;
+        color: $redishColor;
+        padding: 0 .4rem;
+      }
+    } // end legend
+    label.top {
+      display: block;
+      padding: .75rem 0;
+      span {
+        font-size: .75rem;
+        color: $redishColor;
+      }
+      input, textarea, select {
+        display: block;
+        font-size: 1.25rem;
+        padding: .75rem 1rem;
+        background-color: #F6F6F6;
+        border: none;
+        border-radius: 5px;
+        color: $primaryColor;
+        margin-top: .2rem;
+        width: 100%;
+      }
+      textarea {min-height: 8rem;}
+      input:required {border: 2px solid $redishColor;}
+      input:required:valid {border-color: $primaryColor;}
+      input:focus, textarea:focus {background-color: #ddd;}
+    } // end label
+
+    label.sbs {
+      display: block;
+      padding: .75rem 0;
+    }
+
+    h2 {
+      font-weight: $normalWeight;
+      font-size: .75rem;
+      padding: 1.5rem 0 0 0;
+    }
+
+    input.submitBtn {
+      border: none;
+      background-color: $redishColor;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: $normalWeight;
+      padding: .4rem 1rem;
+      border-radius: 1rem;
+      width: 100%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    } // end button
+
+  } // end form
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
