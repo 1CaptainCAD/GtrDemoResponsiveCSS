@@ -224,6 +224,22 @@ main.guitarAdd form {
     font-weight: 300;
     font-size: .75rem;
     padding: 1.5rem 0 0 0; }
+  main.guitarAdd form section span {
+    display: none; }
+  main.guitarAdd form section.error span {
+    display: block;
+    font-size: .75rem;
+    color: #c20000;
+    padding-left: .2rem; }
+  main.guitarAdd form section.error div {
+    background-color: rgba(255, 0, 0, 0.3); }
+  main.guitarAdd form section p {
+    display: none; }
+  main.guitarAdd form section.error p {
+    display: block;
+    border: solid 1px #f00;
+    background-color: rgba(255, 0, 0, 0.3);
+    padding: 0.3rem 2%; }
   main.guitarAdd form input.submitBtn {
     border: none;
     background-color: #ce3a67;

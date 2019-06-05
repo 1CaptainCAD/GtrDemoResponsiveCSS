@@ -177,6 +177,26 @@ main.guitarAdd {
       padding: 1.5rem 0 0 0;
     }
 
+    section span {display: none;}
+    section.error span {
+      display: block;
+      font-size: .75rem;
+      color: #c20000;
+      padding-left: .2rem;
+    }
+    section.error div {
+      background-color: rgba(255,0,0,0.3);
+    }
+    section p {
+      display: none;
+    }
+    section.error p {
+      display: block;
+      border: solid 1px #f00;
+      background-color: rgba(255, 0, 0, 0.3);
+      padding: .3rem $gutter;
+    }
+
     input.submitBtn {
       border: none;
       background-color: $redishColor;

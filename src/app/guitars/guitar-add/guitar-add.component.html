@@ -1,6 +1,8 @@
 <main class="guitarAdd">
-  <form method="get">
-
+  <form novalidate (ngSubmit)="addGuitar()" [formGroup]="guitarAddForm">
+    <section id="guitarAddFormProblems" class="">
+      <p>There was a problem with your submission. <br>Errors have been highlighted below.</p>
+    </section>
     <fieldset>
       <legend>Guitar Information</legend>
       <label class="top">Brand
@@ -13,15 +15,24 @@
           <option value="yamaha">Yamaha</option>
         </select>
       </label>
-      <label class="top"> Model <span>(required)</span>
-        <input type="text" required>
-      </label>
-      <label class="top"> Price <span>(required)</span>
-        <input type="number" required>
-      </label>
-      <label class="top"> Rating <span>(required)</span>
-        <input type="number" required>
-      </label>
+      <section id="model" class="">
+        <label class="top"> Model <span>(required)</span>
+          <input type="text" required>
+          <span>Guitar Model is required</span>
+        </label>
+      </section>
+      <section id="price" class="">
+        <label class="top"> Price <span>(required)</span>
+          <input type="number" required>
+          <span>Price is required</span>
+        </label>
+      </section>
+      <section id="rating" class="">
+        <label class="top"> Rating <span>(required)</span>
+          <input type="number" required>
+          <span>Rating is required</span>
+        </label>
+      </section>
       <label class="top">Description<textarea></textarea></label>
     </fieldset>
     <fieldset>
